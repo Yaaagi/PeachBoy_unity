@@ -10,12 +10,17 @@ public class TimeCount : MonoBehaviour
 
     public bool isTimeUp;
 
+    public GameObject stopMainSound;
+    public GameObject soundfinish;
+
 
     // Start is called before the first frame update
     void Start()
     {
         countdown = 65.0f;
         isTimeUp = false;
+        stopMainSound = GameObject.Find("Audio Source");
+        soundfinish = GameObject.Find("Finish Sound");
     }
     
 
@@ -40,6 +45,8 @@ public class TimeCount : MonoBehaviour
             
             isTimeUp = true;
             timeText.text = "残り" + "0.0" + "秒";
+            stopMainSound.GetComponent<BringBGM2>().StopMainSound();
+            soundfinish.GetComponent<FinishSound>().SoundFinish();
         }
         if (p==0)
         {

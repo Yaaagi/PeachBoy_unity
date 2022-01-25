@@ -8,11 +8,14 @@ public class NameKiji : MonoBehaviour
 
     public GameObject counter;
 
+    public GameObject soundkiji;
+
     // Start is called before the first frame update
     void Start()
     {
         timeUp = GameObject.Find("Time");
         counter = GameObject.Find("DogCounter");
+        soundkiji = GameObject.Find("Kiji Sound");
     }
     private string objName;
     public float kijiv = 0.05f;
@@ -48,6 +51,7 @@ public class NameKiji : MonoBehaviour
             kijiv = 0f;
             a = 1.0f;
             counter.GetComponent<Counter>().AttendKiji();
+            soundkiji.GetComponent<KijiSound>().SoundKiji();
         }
         //桃太郎に当たったら消える
         if (objName == "桃太郎")

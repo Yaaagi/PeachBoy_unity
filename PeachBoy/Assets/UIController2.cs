@@ -59,7 +59,7 @@ public class UIController2 : MonoBehaviour
         {
             playerRank = "F";
         }
-        if (dogcount==10 && monkeycount==10 && kijicount == 0)
+        if (dogcount==10 && monkeycount==10 && kijicount == 10)
         {
             playerRank = "S";
         }

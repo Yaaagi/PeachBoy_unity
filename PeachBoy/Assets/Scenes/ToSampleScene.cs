@@ -5,12 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class ToSampleScene : MonoBehaviour
 {
+    public static string nowScene = "NotNowScene";
+
     private float step_time;    // 経過時間カウント用
 
     // Start is called before the first frame update
     void Start()
     {
         step_time = 0.0f;       // 経過時間初期化
+        nowScene = "NowScene";
     }
 
     // Update is called once per frame

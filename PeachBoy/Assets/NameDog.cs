@@ -9,7 +9,7 @@ public class NameDog : MonoBehaviour
 
     public GameObject counter;
 
-    
+    public GameObject sounddog;
 
 
     // Start is called before the first frame update
@@ -17,6 +17,7 @@ public class NameDog : MonoBehaviour
     {
         timeUp = GameObject.Find("Time");
         counter = GameObject.Find("DogCounter");
+        sounddog = GameObject.Find("Dog Sound");
     }
     private string objName;
     public float dogv = 0.05f;
@@ -57,6 +58,7 @@ public class NameDog : MonoBehaviour
             dogv = 0f;
             a = 1.0f;
             counter.GetComponent<Counter>().AttendDog();
+            sounddog.GetComponent<DogSound>().SoundDog();
         }
         //桃太郎に当たったら消える
         if (objName == "桃太郎")

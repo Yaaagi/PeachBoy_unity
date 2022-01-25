@@ -6,10 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class SkipButton : MonoBehaviour
 {
+    public GameObject stopSound;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        stopSound = GameObject.Find("Audio Source");
     }
 
     // Update is called once per frame
@@ -21,5 +23,6 @@ public class SkipButton : MonoBehaviour
     public void ClickStartButton()
     {
         SceneManager.LoadScene("Start");
+        stopSound.GetComponent<BringBGM>().StopSound();
     }
 }

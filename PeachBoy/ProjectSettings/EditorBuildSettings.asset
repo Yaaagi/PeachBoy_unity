@@ -47,4 +47,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RankF.unity
     guid: 5b60aa51e05c72c4b83798c588dd6e2b
+  - enabled: 1
+    path: Assets/Scenes/Credit.unity
+    guid: 2d7b8982bf2b68346ae040c8d19b197d
+  - enabled: 1
+    path: Assets/Scenes/Character.unity
+    guid: cefb7032989e2f44c97682002443e3b8
   m_configObjects: {}
