@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 8d038865873420b4e824d1a644bdedfd
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: GenRyuMin TW
+  fontNames:
+  - GenRyuMin TW
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 24596d557e3fa954fadb50aab2bb9922, type: 3}
+  - {fileID: 12800000, guid: 81fd8a2a89dbffb4f8946806cf093b8b, type: 3}
+  - {fileID: 12800000, guid: 4010fadeeee9bc0468f6938fc74f2c20, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
